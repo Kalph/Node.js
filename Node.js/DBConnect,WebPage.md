@@ -36,7 +36,7 @@ sqlConn.on('connect', function(err) {
 });
 
 function executeStatement() {
-    request = new Request("select * from general where main_Name='DA-402-1'", function(err, rowCount) {
+    request = new Request("query", function(err, rowCount) {
         if (err) {
             console.log(err);
         } else {
